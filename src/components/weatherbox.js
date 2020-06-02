@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const WeatherBox =({temp,weather}) => {
+const WeatherBox =props => {
     return(
-
+        
         <div className= 'weather-box'>
-            <div className="temp">temp</div>
-            <div className="weather">weather</div>  
+            <div className="temp">{props.temp_celsius}&deg;</div>
+            <div className="weather">{props.description}</div>  
         </div>
        
     );
